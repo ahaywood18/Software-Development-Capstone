@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>W3.CSS Template</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<style>
+
+    * {
+
+  box-sizing: border-box;
+
+}
+
+.column {
+
+  float: left;
+
+  width: 33.33%;
+
+  padding: 5px;
+
+}
+
+/* Clearfix (clear floats) */
+
+.row::after {
+
+  content: "";
+
+  clear: both;
+
+  display: table;
+
+}
+
+    ol {
+
+  background: #ff9999;
+
+  padding: 20px;
+
+}
+
+ul {
+
+  background: #3399ff;
+
+  padding: 20px;
+
+}
+
+ol li {
+
+  background: #ffe5e5;
+
+  padding: 5px;
+
+  margin-left: 35px;
+
+}
+
+ul li {
+
+  background: #cce5ff;
+
+  margin: 5px;
+
+}
+
+body, html {
+
+  height: 100%;
+
+  font-family: "Inconsolata", sans-serif;
+
+}
+
+.bgimg {
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-image: url("/w3images/coffeehouse.jpg");
+
+  min-height: 75%;
+
+}
+
+.menu {
+
+  display: none;
+
+}
+
+</style>
+
+<body>
+
+<!-- Links (sit on top) -->
+
+<div class="w3-top">
+
+  <div class="w3-row w3-padding w3-black">
+
+    <div class="w3-col s2   ">
+
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+
+    </div>
+
+    <div class="w3-col s2">
+
+        <a href="#existingcustomers" class="w3-button w3-block w3-black"> Existing Customers</a>
+
+      </div>
+
+      <div class="w3-col s2">
+
+        <a href="#newcustomers" class="w3-button w3-block w3-black">New Customers</a>
+
+      </div>
+
+      <div class="w3-col s2">
+
+        <a href="#menu" class="w3-button w3-block w3-black">Inventory </a>
+
+      </div>
+
+    <div class="w3-col s2">
+
+      <a href="#about" class="w3-button w3-block w3-black"> About The Company</a>
+
+    </div>
+
+    <div class="w3-col s2">
+
+      <a href="#where" class="w3-button w3-block w3-black"> Contact Us</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Header with image -->
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+
+    <span class="w3-tag">Please Provide your Created Home page Code Here</span>
+
+  </div>
+
+  <div class="w3-display-middle w3-center">
+
+    <span class="w3-text-white" style="font-size:90px">the<br>Home Page</span>
+
+  </div>
+
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+
+    <span class="w3-text-white">35 lk street, mala</span>
+
+  </div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- existing customers Container -->
+
+<div class="w3-container" id="existingcustomers">
+
+    <div class="w3-content" style="max-width:700px">
+
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Existing Customers</span></h5>
+
+      <ol>
+
+        <li>Cutomer 1</li>
+
+        <li>Cutomer 2</li>
+
+        <li>Cutomer 1</li>
+
+      </ol>
+
+      
+
+      <ul>
+
+        <li>Cutomer 3</li>
+
+        <li>Cutomer 4</li>
+
+        <li>Cutomer 5</li>
+
+      </ul>
+
+      <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+      <p><strong>Thaks For All:</strong>Cutomer 3,Cutomer 1 and Cutomer 2</p>
+
+      <p><strong>Best Customer:</strong> Cutomer 3</p>
+
+    </div>
+
+  </div>
+
+  <!--  new customers Container -->
+
+<div class="w3-container" id="newcustomers">
+
+    <div class="w3-content" style="max-width:700px">
+
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">New Customers </span></h5>
+
+      <form action="/action_page.php">
+
+        <label for="fname">First name:</label><br>
+
+        <input type="text" id="fname" name="fname" value="John"><br>
+
+        <label for="lname">Last name:</label><br>
+
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+        <label for="lname">Email:</label><br>
+
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+        <label for="lname">Password:</label><br>
+
+        <input type="password" id="lname" name="lname" value="Doe"><br><br>
+
+        <input type="submit" value="Sign Up">
+
+      </form>       
+
+    </div>
+
+  </div>
+
+<!-- Inventory Container -->
+
+<div class="w3-container" id="menu">
+
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE Inventory</span></h5>
+
+  
+
+    <div class="w3-row w3-center w3-card w3-padding">
+
+        <div class="row">
+
+            <div class="column">
+
+              <img src="https://i.postimg.cc/wxCtTfsM/apple.png" alt="Snow" style="width:100%">
+
+            </div>
+
+            <div class="column">
+
+              <img src="https://i.postimg.cc/sgyv5MmR/chilly.png" alt="Forest" style="width:100%">
+
+            </div>
+
+            <div class="column">
+
+              <img src="https://i.postimg.cc/zfGvP44t/colors.png" alt="Mountains" style="width:100%">
+
+            </div>
+
+          </div>
+
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+
+      <h5>Bread Basket</h5>
+
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+    
+
+      <h5>Honey Almond Granola with Fruits</h5>
+
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+    
+
+      <h5>Belgian Waffle</h5>
+
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+
+    
+
+      <h5>Scrambled eggs</h5>
+
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+    
+
+      <h5>Blueberry Pancakes</h5>
+
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+
+      <h5>Coffee</h5>
+
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+
+    
+
+      <h5>Chocolato</h5>
+
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+
+    
+
+      <h5>Corretto</h5>
+
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+
+    
+
+      <h5>Iced tea</h5>
+
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+
+    
+
+      <h5>Soda</h5>
+
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+
+    </div>  
+
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+
+  </div>
+
+</div>
+
+<!-- About Container -->
+
+<div class="w3-container" id="about">
+
+    <div class="w3-content" style="max-width:700px">
+
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE COMPANY</span></h5>
+
+      <p>write some thing about company write some thing about company</p>
+
+      <p>write some thing about company write some thing about company</p>
+
+      <div class="w3-panel w3-leftbar w3-light-grey">
+
+        <p><i>"write some thing about company</i></p>
+
+        <p>write some thing about company</p>
+
+      </div>
+
+      <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+      <p><strong>Timing :</strong> everyday from 6am to 5pm.</p>
+
+      <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+
+    </div>
+
+  </div>
+
+<!-- Contact/Area Container -->
+
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Contact Us</span></h5>
+
+    <p>Find us at some address at some place.</p>
+
+    <img src="imageurl" class="w3-image" style="width:100%">
+
+    <p><span class="w3-tag">FYI!</span> contact information for the company.</p>
+
+    <p><strong>Reserve</strong> contact information for the company. contact information for the company.</p>
+
+    
+
+  </div>
+
+</div>
+
+<!-- End page content -->
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+
+  <p>Powered by Company Name</p>
+
+</footer>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCgNpJkTjuUGOJ5zhHFBCbGHgsvKlnzJ1A",
+    authDomain: "affordable-a0205.firebaseapp.com",
+    databaseURL: "https://affordable-a0205.firebaseio.com",
+    projectId: "affordable-a0205",
+    storageBucket: "affordable-a0205.appspot.com",
+    messagingSenderId: "597770643459",
+    appId: "1:597770643459:web:bd0b01eea2fb1ee0cd8636",
+    measurementId: "G-T59H01FEYR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+
+</html>
